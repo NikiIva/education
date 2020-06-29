@@ -1,5 +1,4 @@
-﻿// ConsoleApplication1.cpp : Этот файл содержит функцию "main". Здесь начинается и заканчивается выполнение программы.
-#include <stdio.h>
+﻿#include <stdio.h>
 
 int gcd(int a, int b) {
     if (b == 0)
@@ -10,7 +9,17 @@ int gcd(int a, int b) {
 
 int main()
 {
-    int a = 30;
-    int b = 18;
+    int a;
+    int b;
+
+    printf("Write two numbers:");
+    scanf("%d%d", &a,&b);  //он говорит, что не учитывается возвращаемое значение. Я раньше так делал
+    if (a < b) {
+        int c = a;
+        a = b;
+        b = c;
+    }
     printf("%d",gcd(a,b));
+
+
 }
