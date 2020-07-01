@@ -1,9 +1,11 @@
 #include "task.h"
 #include <stdio.h>
 
-int main() {
-    unsigned long long a;
-    printf("Write two numbers:\n");
+int main(int argc, char* argv[]) {
+    int a;
+    printf("Write number:\n");
     scanf("%d", &a);
-    printf("%d", factorial(a));
+    printf("%d",a);
+    unsigned long long result = factorial(a);
+    printf("%llu", result);//ошибка печати
 }

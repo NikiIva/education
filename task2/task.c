@@ -1,4 +1,3 @@
-#include "task.h"
 #include <stdio.h>
 
 unsigned long long factorial(int a) {
