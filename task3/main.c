@@ -25,8 +25,7 @@ void converter(int size,char * chars) {
 }
 
 
-int main()
-{
+int main(){
     int size;
     printf("Write size of string_to_int:\n");
     scanf("%d", &size);
