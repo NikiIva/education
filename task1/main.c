@@ -1,12 +1,11 @@
 #include "task.h"
 #include <stdio.h>
 
-
-int main()
-{
+int main(){
     int a;
     int b;
     printf("Write two numbers:\n");
-    scanf("%d%d", &a, &b);
-    printf("%d", gcd(a, b));
+    scanf("%u%u", &a, &b);
+    swap(&a,&b);
+    printf("The answer is %d", gcdCyc(a, b));
 }
